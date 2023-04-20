@@ -1,0 +1,206 @@
+/* ## Colors
+
+### Primary
+
+- Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+- Light slate blue (background): hsl(252, 100%, 67%)
+- Light royal blue (background): hsl(241, 81%, 54%)
+
+- Violet blue (circle): hsla(256, 72%, 46%, 1)
+- Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+  width: 500px;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-radius: 25px;
+  box-shadow: 20px 20px 10px hsl(0, 2%, 89%);
+}
+
+.result-section {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 25px;
+  text-align: center;
+  color: hsl(221, 100%, 96%);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: hsl(241, 100%, 89%);
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.result {
+  height: 125px;
+  width: 125px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  text-align: center;
+  padding: 10px;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.tot-score {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.of-100 {
+  font-size: 13px;
+  color: hsl(241, 100%, 89%);
+}
+
+.result-p {
+  font-size: 14px;
+  color: hsl(241, 100%, 89%);
+}
+.summary-section {
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  border-radius: 25px;
+  padding: 30px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+h3 {
+  font-size: 18px;
+  text-align: left;
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 15px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.box {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.icon-cat {
+  display: flex;
+  gap: 10px;
+}
+
+.r {
+  color: hsla(0, 100%, 67%);
+}
+
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.m {
+  color: hsl(39, 100%, 56%);
+}
+
+.memory {
+  background-color: hsl(39, 100%, 56%, 0.1);
+}
+
+.ve {
+  color: hsl(166, 100%, 37%);
+}
+
+.verbal {
+  background-color: hsl(166, 100%, 37%, 0.1);
+}
+
+.vi {
+  color: hsl(234, 85%, 45%);
+}
+
+.visual {
+  background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.score {
+  color: hsl(224, 30%, 27%);
+  display: flex;
+  gap: 5px;
+}
+
+.cat-score {
+  font-weight: bolder;
+}
+
+.tot-100 {
+  color: hsl(240, 2%, 55%);
+}
+
+.continue {
+  background-color: hsl(224, 30%, 27%);
+  color: hsl(221, 100%, 96%);
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 10px;
+  width: 100%;
+}
